@@ -1,0 +1,25 @@
+:root {
+    --Primario:#1073BA;
+    --secundario:#00Da55;
+    --gris:#3B3B3B;
+    --blanco:#FFFFFF;
+    --negro:#1F1E1E;
+    --grisClaro:#E1E1E1;
+
+    --separacion:5rem;
+
+    --FuentePrincipal: 'Roboto', sans-serif;
+    --FuenteSecundaria: 'Lato', sans-serif;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--FuentePrincipal);
+}
