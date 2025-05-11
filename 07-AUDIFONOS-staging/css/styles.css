@@ -49,6 +49,7 @@ h3 {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /**Utilidades**/
@@ -56,8 +57,63 @@ img {
     text-align: center;
 }
 
+
+/**Degradados**/
+
+.degradado-verde {
+    color: transparent;
+    background:linear-gradient(to right, var(--Primario) 0%,var(--secundario)100%) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 /**header**/
 .header {
-    background-color: black;
-    
+    background-color: var(--negro);
+    padding: calc(var(--separacion) * 3) 0;
+    color: var(--blanco);
+}
+
+
+@media (min-width: 768px) {
+    .contenido-header{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.texto-header{
+    text-align: center;
+    padding-top: var(--separacion);
+}
+
+@media (min-width:768px) {
+    .texto-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+.text-header p{
+    margin: 0;
+}
+
+.tagline-producto{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.nombre-producto{
+    font-weight: 6rem;
+}
+
+@media (min-width:768px) {
+    .nombre-producto{
+        font-weight: 10rem;
+        margin:0;
+        line-height: 1;
+    }
+}
+.precio-producto span{
+    font-size: 6rem;
+    font-weight: 900;
 }
