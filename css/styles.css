@@ -356,3 +356,13 @@ img {
     border: none;
 
 }
+
+/**footer**/
+.footer p{
+    text-align: center;
+    font-family: var(--FuentePrincipal);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--Primario);
+    padding: 3rem 0;
+}
